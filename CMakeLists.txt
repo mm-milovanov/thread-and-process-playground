@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.22)
 project(pthreads-playground)
 
 file(GLOB tasks_src
-    ${CMAKE_CURRENT_SOURCE_DIR}/tasks/*.c
-    ${CMAKE_CURRENT_SOURCE_DIR}/tasks/*.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/unix_threads_in_c/*.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/unix_threads_in_c/*.cpp
 )
 
 foreach(file_path ${tasks_src})
