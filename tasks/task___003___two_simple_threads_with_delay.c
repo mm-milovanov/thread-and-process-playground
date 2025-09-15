@@ -4,11 +4,13 @@
 #include <pthread.h>
 
 /*
- * Создание двух примитивных потоков выполняющихся друг за другом.
+ * Создание двух примитивных потоков с внутренней задержкой
  */
 
 void* routine() {
     printf("Test from threads\n");
+    sleep(3);
+    printf("Ending thread\n");
 }
 
 int main(int argc, char** argv) {
