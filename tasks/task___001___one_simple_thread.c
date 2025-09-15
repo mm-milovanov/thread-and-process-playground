@@ -3,6 +3,10 @@
 #include <unistd.h>
 #include <pthread.h>
 
+/*
+ * Создание одного примитивного потока.
+ */
+
 void* routine() {
     printf("Test from threads\n");
 }
